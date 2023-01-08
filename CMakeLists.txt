@@ -10,7 +10,6 @@ set(CMAKE_C_FLAGS "$ENV{CXXFLAGS} -Wno-sign-compare -Wno-unused-but-set-variable
 set(SRC
     json/json.cpp
     json/json_parser.cpp
-
 )
 
 add_library(fepoh_json SHARED ${SRC})
@@ -18,7 +17,6 @@ add_library(fepoh_json SHARED ${SRC})
 set(
     LIB
     fepoh_json
-
 )
 
 add_executable(test json/test.cpp ${SRC})
